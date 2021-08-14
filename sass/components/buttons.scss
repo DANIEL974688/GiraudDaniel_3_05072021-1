@@ -1,0 +1,110 @@
+/* bouton 1 */
+
+button{
+    font-size: 14PX ;
+    border-radius: 22px;
+    color:white;
+    margin:10px;
+    min-width: 200px;
+    max-width: 80%;
+    height: 45PX;
+    font-family:'Roboto-Bold', sans-serif;
+    }
+.btn1{
+    background: linear-gradient(170deg, $color-primary, $color-secondary);
+    opacity:1;
+        &:hover{
+        opacity:0.6;
+        box-shadow: 2px 2px black;
+        }
+    }
+/* séries de 3 boutons */
+
+
+ol{
+    list-style: none;
+    counter-reset: bullets;
+    max-width: 100%; 
+    padding-left: 0;
+    margin-left: 0.4rem;   
+    margin-right: 1rem;
+    padding-bottom: 25px;   
+    }
+li{
+    font-weight: 700;
+    font-family: 'Roboto-Bold';
+    counter-increment: bullets;
+    align-items: center;
+    max-width: 100%;
+    display: flex;
+    font-size: 14PX ;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    height: 60PX;
+    background-color:  #f6f6f6 ;
+    gap:8%;
+    border-radius: 16px 16px 16px 16px;
+    box-shadow: 0 0 2em #eaeaea;
+    &::before{
+        content:counter(bullets);
+        color:white;
+        background:#9356dc;
+        padding:0.2rem 0.5rem;
+        border-radius: 50%;
+        margin-left: -0.8rem;
+            }
+    &:hover{
+        background:#eff4f4 ;
+        box-shadow: 0 0 1px 1px #d3d4d4;
+            }
+        }
+.clr{
+    background:#f5edff;
+    &:hover{
+        background: #f2e6f7 ;
+        box-shadow: 0 0 1px 1px #d3d4d4;
+        color:$color-primary;
+            }
+    h4:hover{
+        color:black;
+            }
+    }            
+/* bouton retour menu*/        
+.btnback{
+    position:absolute;
+    display: flex;
+    z-index:1;
+    left:10px;
+    align-items: center;
+    top:10px;
+     } 
+/* Like bouton*/
+.like{
+    position: relative;
+    display:flex;
+    align-items:center;
+    width: 24px;
+    height: 24px;
+    margin:16px;
+    }
+.coeurvide{
+    position:absolute;
+    font-size: 23px;
+    display:block;
+        }
+.coeurplein{
+    position:absolute;
+    font-size: 24px;
+    color: #ffabc1;
+    display: block;
+    z-index: 1;
+    background-image: -webkit-linear-gradient( $color-secondary, $color-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity:0;
+    &:hover{
+        opacity:1;
+            }
+        }

@@ -1,0 +1,800 @@
+@charset "UTF-8";
+/* PLAN GENERAL*/
+/* Régles générales*/
+/*I MEDIAQUERIES POUR TELEPHONE (MOBIL FIRST)*/
+/* II MEDIAQUERIES POUR TABLETTES*/
+/* III MEDIAQUERIES POUR ORDINATEUR*/
+/* Charte graphique*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/* bouton 1 */
+button {
+  font-size: 14PX;
+  border-radius: 22px;
+  color: white;
+  margin: 10px;
+  min-width: 200px;
+  max-width: 80%;
+  height: 45PX;
+  font-family: "Roboto-Bold", sans-serif;
+}
+
+.btn1 {
+  background: linear-gradient(170deg, #9356dc, #ff7ad9);
+  opacity: 1;
+}
+.btn1:hover {
+  opacity: 0.6;
+  box-shadow: 2px 2px black;
+}
+
+/* séries de 3 boutons */
+ol {
+  list-style: none;
+  counter-reset: bullets;
+  max-width: 100%;
+  padding-left: 0;
+  margin-left: 0.4rem;
+  margin-right: 1rem;
+  padding-bottom: 25px;
+}
+
+li {
+  font-weight: 700;
+  font-family: "Roboto-Bold";
+  counter-increment: bullets;
+  align-items: center;
+  max-width: 100%;
+  display: flex;
+  font-size: 14PX;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  height: 60PX;
+  background-color: #f6f6f6;
+  gap: 8%;
+  border-radius: 16px 16px 16px 16px;
+  box-shadow: 0 0 2em #eaeaea;
+}
+li::before {
+  content: counter(bullets);
+  color: white;
+  background: #9356dc;
+  padding: 0.2rem 0.5rem;
+  border-radius: 50%;
+  margin-left: -0.8rem;
+}
+li:hover {
+  background: #eff4f4;
+  box-shadow: 0 0 1px 1px #d3d4d4;
+}
+
+.clr {
+  background: #f5edff;
+}
+.clr:hover {
+  background: #f2e6f7;
+  box-shadow: 0 0 1px 1px #d3d4d4;
+  color: #9356dc;
+}
+.clr h4:hover {
+  color: black;
+}
+
+/* bouton retour menu*/
+.btnback {
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  left: 10px;
+  align-items: center;
+  top: 10px;
+}
+
+/* Like bouton*/
+.like {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  margin: 16px;
+}
+
+.coeurvide {
+  position: absolute;
+  font-size: 23px;
+  display: block;
+}
+
+.coeurplein {
+  position: absolute;
+  font-size: 24px;
+  color: #ffabc1;
+  display: block;
+  z-index: 1;
+  background-image: -webkit-linear-gradient(#ff7ad9, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+.coeurplein:hover {
+  opacity: 1;
+}
+
+h1 {
+  font-family: "Roboto-Bold", sans-serif;
+  font-size: 25px;
+}
+
+h3 {
+  padding: 6px 4px 2px 6px;
+  font-family: "Roboto-Bold", sans-serif;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 0px;
+  width: 230px;
+}
+
+h2 {
+  font-family: "Roboto-Bold", sans-serif;
+  text-align: start;
+  font-weight: 500;
+}
+
+h4, h5 {
+  font-family: "Roboto-Bold", sans-serif;
+}
+
+/* I Mediaqueries Mobil first*/
+/* I.1 Préparation classe générale*/
+html {
+  height: 100%;
+}
+
+main {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+body {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  padding: 2px;
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  width: 95%;
+}
+
+header {
+  margin: 0.5em;
+  padding: 0.5rem;
+}
+
+/* I.1.1 Page menu */
+/* I.1.1.1 Valeur générale*/
+p {
+  font-size: 12px;
+  line-height: 90%;
+  padding-left: 6px;
+  margin-top: 2px;
+}
+
+/* I.1.1.2 Header*/
+.flechegauche {
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.logo-accueil {
+  max-width: 45%;
+}
+
+.logo-menu {
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.container_header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  max-width: 100%;
+}
+
+/* I.1.1.3 Restaurant*/
+.imagerestaurant {
+  object-fit: cover;
+}
+
+.restaurant2 {
+  display: flex;
+}
+
+/* I.1.1.4 Articles */
+.menu {
+  position: relative;
+  display: flex;
+  background-color: #eff4f4;
+  border-radius: 50px 50px 0px 0px;
+  font-family: "Roboto-Bold", sans-serif;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  overflow: visible;
+  width: 100%;
+  padding-left: 5px;
+  padding-bottom: 40px;
+}
+
+.menu__titre {
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  width: 330px;
+  font-family: "Shrikhand", cursive;
+  padding-top: 25px;
+  margin-left: 5px;
+}
+
+.entrees, .plats, .desserts {
+  width: 340px;
+  padding: 5px 5px 5px 0;
+}
+
+.entrees__titre {
+  display: flex;
+  border-bottom: 3px solid #9be2d1;
+  margin-left: 8px;
+  color: #363636;
+  margin-bottom: 15px;
+  padding-bottom: 2px;
+  width: 12%;
+  font-size: 0.6em;
+}
+
+.animation__entree1, .animation__plat1, .animation__dessert1 {
+  width: 300px;
+}
+
+.animation__entree1 {
+  animation: demarrage-delai 3500ms ease-out 1500ms 1 forwards;
+}
+.animation__entree1.animation__entree1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  border-radius: 10px 10px 10px 10px;
+  white-space: nowrap;
+  background-color: #ffffff;
+  margin: 5px 8PX 10PX 8PX;
+  content: "";
+}
+
+.animation__plat1 {
+  animation: demarrage-delai 3500ms ease-out 3000ms 1 forwards;
+}
+.animation__plat1.animation__plat1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  border-radius: 10px 10px 10px 10px;
+  white-space: nowrap;
+  background-color: #ffffff;
+  margin: 5px 8PX 10PX 8PX;
+  content: "";
+}
+
+.animation__dessert1 {
+  animation: demarrage-delai 3500ms ease-out 5000ms 1 forwards;
+}
+.animation__dessert1.animation__dessert1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  border-radius: 10px 10px 10px 10px;
+  white-space: nowrap;
+  background-color: #ffffff;
+  margin: 5px 8PX 10PX 8PX;
+  content: "";
+}
+
+.ingredients {
+  overflow: hidden;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  width: 200px;
+  margin-left: 4px;
+  height: 30px;
+  white-space: nowrap;
+  display: block;
+}
+
+@keyframes demarrage-delai {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.text__entree1 {
+  text-align: left;
+  display: flex;
+  width: 260px;
+  flex-direction: row;
+  flex: 1;
+  margin: 4px 4px 4px 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 65px;
+  padding: 0px;
+  white-space: nowrap;
+  flex-wrap: wrap;
+}
+
+.prix__entree1 {
+  font-size: 15px;
+  margin: 5px;
+}
+
+.commander {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+}
+
+.prix {
+  height: 20px;
+  font-size: 20px;
+  width: 55px;
+  margin-top: 45px;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+}
+.prix:active {
+  transition-delay: 0.75s;
+  transform: translateX(-10px);
+}
+.prix:active + .cercle {
+  width: 65px;
+}
+.prix:active + .cercle > .circlehere {
+  animation: decalage 600ms 1000ms linear;
+}
+
+@keyframes decalage {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.cercle {
+  cursor: pointer;
+  background-color: #99E2D0;
+  background-attachment: local;
+  height: 85px;
+  width: 0;
+  border-radius: 0 10px 10px 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 0px;
+  color: white;
+}
+
+/* I.2 Applications du loading spinner*/
+.container {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 250%;
+  text-align: center;
+  animation: loader 1s ease-in-out 1.5s reverse both;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes loader {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.loading {
+  border-radius: 50%;
+  border-top: 16px solid lightgrey;
+  border-right: 16px solid #99e2d0;
+  border-bottom: 16px solid #9356dc;
+  border-left: 16px solid #ff79da;
+  width: 150px;
+  height: 150px;
+  animation: spin 2s linear;
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;
+  content: "";
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+    display: none;
+  }
+}
+/* I.3 Localisation */
+.localisation {
+  display: flex;
+  gap: 8%;
+  background-color: #eaeaea;
+  box-shadow: 0px 1px #d4d4d4;
+  justify-content: center;
+}
+
+.carte {
+  min-width: 280px;
+  display: flex;
+  align-items: center;
+  height: 45px;
+  gap: 8%;
+  justify-content: center;
+}
+
+/* I.4 Bloc Haut*/
+.haut {
+  background-color: #eff4f4;
+  padding: 5px;
+  padding-bottom: 40px;
+}
+
+img {
+  border-radius: 10px 10px 0px 0px;
+  max-width: 100%;
+}
+
+/* I.5 Bloc navigation*/
+.navigation {
+  margin-left: 0.4rem;
+  background-color: #FFFFFF;
+}
+
+/* I.6 Bloc Restaurants*/
+.restaurants {
+  background-color: #f6f6f6;
+  padding: 3px;
+}
+
+.titre {
+  padding-left: 15px;
+}
+
+.choixrestaurant {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.blocimagetexte {
+  position: relative;
+  display: flex;
+  margin: 10px;
+  border-radius: 10px 10px 10px 10px;
+  border: 1px solid #e7e7e7;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  min-width: 240px;
+  max-width: 100%;
+  background-color: #ffffff;
+}
+
+.new {
+  position: absolute;
+  background-color: #71d7be;
+  color: #278870;
+  height: 25px;
+  width: 80px;
+  border-radius: 3px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  margin: 5%;
+  align-items: center;
+  font-weight: 900;
+  font-size: 0.8em;
+  top: 5PX;
+  right: 5px;
+}
+
+.texterestaurants {
+  display: grid;
+  text-align: left;
+  min-width: 240px;
+  max-width: 100%;
+  grid-template-columns: 1fr;
+  grid-gap: 2px;
+  line-height: 15%;
+  font-family: "Roboto-Bold", sans-serif;
+  height: 85px;
+}
+
+.blocbasdepage {
+  display: flex;
+  flex-direction: row;
+  font-family: "Roboto-Bold", sans-serif;
+  padding: 4px;
+}
+
+/* I.7 Bloc footer */
+footer {
+  background-color: black;
+  padding: 18px;
+}
+
+.entete {
+  max-width: 35%;
+  max-height: 55%;
+  margin: 5px;
+}
+
+.proposition, .partenaire, .mention, .contact {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: center;
+  gap: 3%;
+  line-height: 0.2;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* II Mediaqueries pour tablettes*/
+/* II Mediaqueries pour tablettes*/
+@media only screen and (min-width: 600px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+  }
+
+  .carte {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+  }
+
+  /* II.1.1 Page menu*/
+  /*II.1.1.1 Valeur générale*/
+  p {
+    line-height: 100%;
+    font-size: 18px;
+    width: 420px;
+  }
+
+  /* II.1.1.2 Header */
+  .flechegauche {
+    margin-top: 25px;
+    margin-left: 30px;
+  }
+
+  .logo {
+    max-width: 80%;
+  }
+
+  /*II.1.1.4 Articles */
+  .menu__titre {
+    font-size: 35px;
+    width: 550px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .entrees, .plats, .desserts {
+    width: 500px;
+  }
+
+  .animation__entree1, .animation__plat1, .animation__dessert1 {
+    width: 550px;
+  }
+
+  .text__entree1 {
+    text-align: start;
+    font-size: 15px;
+    width: 300px;
+    justify-content: start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 4px;
+    margin-top: 2px;
+  }
+
+  .ingredients {
+    overflow: hidden;
+    font-size: 16px;
+    text-overflow: ellipsis;
+    width: 400px;
+    margin-left: 4px;
+    height: 30px;
+    white-space: nowrap;
+    display: block;
+  }
+
+  h3 {
+    font-size: 17px;
+    width: 550px;
+    margin-top: 11px;
+    margin-bottom: 4px;
+  }
+
+  .commander {
+    width: 550px;
+  }
+
+  /* II.5 Bloc Navigation*/
+  ol {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  li {
+    width: 165px;
+    font-size: 9px;
+    padding-right: 0px;
+    margin: 2px;
+  }
+
+  .choixrestaurant {
+    display: flex;
+    justify-content: center;
+  }
+
+  .blocimagetexte {
+    width: 500px;
+  }
+
+  .texterestaurants {
+    width: 430px;
+    height: 70px;
+    padding: 5px;
+    margin: 4px;
+  }
+
+  .entete {
+    max-width: 75%;
+    max-height: 55%;
+    margin: 5px;
+  }
+
+  /* II.1.7 Bloc footer */
+  .entete {
+    display: flex;
+    justify-content: center;
+    max-width: 95%;
+    max-height: 95%;
+  }
+}
+/*III Mediaqueries pour ordinateur*/
+/*III Mediaqueries pour ordinateur*/
+@media only screen and (min-width: 1024px) {
+  /* III.1.1 Page menu */
+  .flechegauche {
+    margin-top: 35px;
+    margin-left: 30px;
+  }
+
+  .menu__titre {
+    width: 1200px;
+    font-size: 58px;
+  }
+
+  .entrees, .plats, .desserts {
+    padding: 22px;
+  }
+
+  .animation__entree1, .animation__plat1, .animation__dessert1 {
+    width: 520px;
+  }
+
+  h3 {
+    font-size: 18px;
+    margin-bottom: 2px;
+  }
+
+  a {
+    width: 500px;
+  }
+
+  .commander {
+    width: 1200px;
+  }
+
+  /* III.1.1.1 Valeur générale */
+  p {
+    font-size: 18px;
+  }
+
+  /* III.1.1.2 Header */
+  .logo {
+    max-width: 100%;
+  }
+
+  /*III.5 Bloc Navigation */
+  li {
+    width: 360px;
+    font-size: 16px;
+  }
+
+  /* III.6 Bloc Restaurants */
+  .blocimagetexte {
+    justify-content: center;
+    margin: 20px 50px;
+    width: 500px;
+  }
+
+  restaurant {
+    max-width: 500px;
+  }
+
+  .texterestaurants {
+    width: 430px;
+    min-height: 80px;
+  }
+
+  /* III.7 Bloc footer */
+  .entete {
+    max-width: 100%;
+    max-height: 55%;
+    margin: 5px;
+  }
+
+  .proposition, .partenaire, .mention, .contact {
+    justify-content: center;
+    line-height: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

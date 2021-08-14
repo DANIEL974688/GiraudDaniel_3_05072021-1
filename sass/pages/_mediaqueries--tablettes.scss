@@ -1,0 +1,112 @@
+/* II Mediaqueries pour tablettes*/
+@media only screen  and(min-width: 600px)  {
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:15px;
+    }
+.carte{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10%; 
+    }
+/* II.1.1 Page menu*/
+   
+/*II.1.1.1 Valeur générale*/
+p{
+    line-height: 100%;
+    font-size:18px;
+    width: 420px;
+}
+/* II.1.1.2 Header */
+.flechegauche{
+    margin-top:25px;
+    margin-left: 30px;
+}
+.logo{
+    max-width: 80%;
+}
+/*II.1.1.4 Articles */
+.menu__titre{
+    font-size: 35px;
+    width: $width-tablettes;
+    display: flex;
+    justify-content: space-evenly;
+}
+.entrees, .plats, .desserts{
+    width: 500px;
+}
+.animation__entree1, .animation__plat1, .animation__dessert1{
+        width: $width-tablettes;
+    }
+.text__entree1{
+    text-align: start;
+    font-size: 15px;
+    width:$width-mobile;
+    justify-content: start;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 4px;
+    margin-top: 2px;
+}
+.ingredients{
+    overflow: hidden;
+    font-size: 16px;
+    text-overflow: ellipsis;
+    width:400px;
+    margin-left: 4px;
+    height: 30px;
+    white-space: nowrap;
+    display:block;
+}
+h3{
+    font-size:17px;
+    width: $width-tablettes;
+    margin-top: 11px;
+    margin-bottom: 4px;
+}
+.commander{
+    width: $width-tablettes;
+}
+/* II.5 Bloc Navigation*/          
+ol{
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row;
+    }
+li{
+    width: 165px;
+    font-size: 9px;
+    padding-right: 0px;
+    margin:2px;
+    }
+.choixrestaurant{
+    display: flex;
+    justify-content: center;
+}
+.blocimagetexte{
+        width: 500px;
+    }
+.texterestaurants{
+    width: 430px;
+    height: 70px;
+    padding:5px;
+    margin:4px;
+}
+.entete{
+    max-width: 75%;
+    max-height: 55%;
+    margin: 5px;
+        }
+/* II.1.7 Bloc footer */
+
+.entete{
+    display: flex;
+    justify-content: center;
+    max-width: 95%;
+    max-height: 95%;
+}
+}  

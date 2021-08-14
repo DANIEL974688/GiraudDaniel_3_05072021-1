@@ -1,0 +1,13 @@
+@mixin animation-plats
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    position:relative;
+    flex-direction: row;
+    border-radius: 10px 10px 10px 10px;
+    white-space: nowrap;
+    background-color: #ffffff;
+    margin:5px 8PX 10PX 8PX;
+    content: "";
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+     <head>
+         <title>Page d'accueil</title>
+        <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="css/style.css"/>
+        <script src="https://kit.fontawesome.com/d3258c716a.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+    </head>
+    <body >
+        <header>
+<!--Header logo image -->
+            <img class="logo-accueil" src="Maquettes_Ohmyfood/images/logo/ohmyfood.png" alt="logosite"/>
+        </header>
+        <main>
+            <section class="container" >    
+                <div class="loading">
+                </div> 
+            </section>
+<!-- zone pour geolocalisation--> 
+            <section class="localisation" >
+                <div Class="carte">
+                    <i class="fas fa-map-marker-alt"></i>
+                   <p> Paris, Belleville</p>
+                </div>
+            </section>
+<!--Présentation des services-->
+            <section class="haut">
+                <h1>Réservez le menu qui vous convient</h1>
+                <h5>Découvrez des restaurants d'exception, sélectionnés par nos soins.</h5>
+                <button class="btn1">Explorez nos restaurants</button>
+            </section>
+<!--Boutons de choix -->
+            <section >
+                <div class="navigation">
+                    <h2>Fonctionnement</h2>
+                    <ol>
+                        <li ><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</li>                               
+                        <li > <i class="far fa-list-alt"></i> Composez votre menu</li>
+                        <li class="clr"> <i class="fas fa-store-alt"></i> <h4>Dégustez au restaurant</h4></li>
+                    </ol>
+                </div>
+            </section>
+<!-- zone de choix des restaurants-->
+            <section class="restaurants">
+                <div class="titre" ><h2>Restaurants</h2>
+                </div>
+                <div class="choixrestaurant">
+    <!-- Bloc image et info par restaurant 1 -->
+                    <div class="blocimagetexte">
+                        <div class="new">Nouveau</div>
+                        <a href="menu.html">
+                            <picture>
+                                <source srcset="Maquettes_Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplashpetit.jay-wennington-N_Y88TWmGwA-unsplashpetit"
+                                        media="(min-width:600px;)">
+                                    <img class="restaurant" src="Maquettes_Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="jay wennington"/>
+                            </picture>
+                        </a>
+                        <div class="blocbasdepage">
+                            <div class="texterestaurants">
+                                <h3>La palette du goût </h3>
+                                <p>Ménilmontant</p> 
+                            </div>
+                            <div class="like">
+                                <i class="far fa-heart coeurvide"></i>
+                                <i class="fas fa-heart coeurplein"></i>
+                            </div>
+                        </div>
+                    </div>
+    <!-- Bloc image et info par restaurant 2 -->
+                    <div class="blocimagetexte">
+                        <a href="menu2.html">
+                            <div class="new">Nouveau</div>
+                            <img class="restaurant1" src="Maquettes_Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="louis hansel shotoflouis"/>
+                        </a>
+                        <article class="blocbasdepage">
+                            <div class="texterestaurants">
+                                <h3>La note enchantée</h3>
+                                <p>Charonne</p>
+                            </div>
+                            <div class="like">
+                                <i class="far fa-heart coeurvide"></i>
+                                <i class="fas fa-heart coeurplein"></i>
+                            </div>
+                        </article>
+                    </div>
+    <!-- Bloc image et info par restaurant 3 -->
+                    <div class="blocimagetexte" >
+                        <a href="menu3.html">
+                            <img class="restaurant1" src="Maquettes_Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplashbis.jpg" alt="stil"/>
+                        </a>   
+                        <article class="blocbasdepage">
+                            <div class="texterestaurants">
+                                <h3>A la française</h3>
+                                <p>Cité rouge</p>
+                            </div>
+                            <div class="like">
+                                <i class="far fa-heart coeurvide"></i>
+                                <i class="fas fa-heart coeurplein"></i>
+                            </div>
+                        </article>
+                    </div>
+    <!-- Bloc image et info par restaurant4 -->
+                    <div class="blocimagetexte">
+                        <a href="menu4.html">
+                            <img class="restaurant" src="Maquettes_Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="toa" />
+                        </a>
+                        <article class="blocbasdepage">
+                            <div class="texterestaurants">
+                                <h3>Le délice des sens</h3>
+                                <p>Folie-Méricourt</p>
+                            </div>
+                            <div class="like">
+                                <i class="far fa-heart coeurvide"></i>
+                                <i class="fas fa-heart coeurplein"></i>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+<!-- Bas de page reproductible-->
+        <footer>
+            <div class="entete">
+                <img class="logoblanc" src="Maquettes_Ohmyfood/images/logo/ohmyfoodwhite.png" alt="logoblanc"/>
+            </div>
+        <nav>
+            <div class="proposition">
+                <i class="fas fa-utensils"></i><p>Proposer un restaurant</p>
+            </div>
+            <div class="partenaire">
+                <i class="fas fa-handshake"></i><p>Devenir partenaire</p>
+            </div>
+            <div class="mention" >
+                <p> Mentions légales</p>
+            </div>
+            <div class="contact">
+              <a href="mailto:ohmyfood@org.com" > <p>Contact</p></a>
+            </div>
+        </nav>
+        </footer>
+       
+    </body>
+  
+        
+</html>
+    

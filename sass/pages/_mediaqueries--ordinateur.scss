@@ -1,0 +1,66 @@
+/*III Mediaqueries pour ordinateur*/
+@media only screen and (min-width:1024px)  {
+/* III.1.1 Page menu */
+.flechegauche{
+    margin-top:35px;
+    margin-left: 30px;
+}
+.menu__titre 
+{
+    width: $width-ordinateur;
+    font-size:58px;
+        }
+.entrees, .plats, .desserts{
+    padding:22px;
+}
+.animation__entree1, .animation__plat1, .animation__dessert1{
+            width: 520px;
+        }
+h3{
+    font-size: 18px;
+    margin-bottom: 2px;
+        }
+a{
+    width: 500px;
+}
+.commander{
+    width: $width-ordinateur;
+}
+/* III.1.1.1 Valeur générale */
+p{
+    font-size:18px ;
+}
+    /* III.1.1.2 Header */@at-root
+.logo{
+    max-width: 100%;
+}
+ /*III.5 Bloc Navigation */ 
+    
+li{
+    width:360px;
+    font-size: 16px;
+        }
+/* III.6 Bloc Restaurants */
+.blocimagetexte{
+    justify-content: center;
+    margin:20px 50px;
+    width: 500px;
+}
+restaurant{
+    max-width: 500px;
+}
+.texterestaurants{
+width: 430px;
+min-height: 80px;
+}
+/* III.7 Bloc footer */
+.entete{
+    max-width: 100%;
+    max-height: 55%;
+    margin: 5px;
+        }
+.proposition, .partenaire, .mention, .contact{
+justify-content: center;
+line-height: 100%;
+    }
+}

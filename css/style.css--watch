@@ -1,0 +1,376 @@
+@charset "UTF-8";
+/* PLAN GENERAL*/
+/* Régles générales*/
+/*I MEDIAQUERIES POUR TELEPHONE (MOBIL FIRST)*/
+/* II MEDIAQUERIES POUR TABLETTES*/
+/* III MEDIAQUERIES POUR ORDINATEUR*/
+/* Charte graphique*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+h1, h3, h4, h5 {
+  font-family: "Roboto", sans-serif;
+  max-width: 100%;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  padding: 0px 15px;
+  text-align: start;
+}
+
+/* I Mediaqueries Mobil first*/
+/* I.1 Préparation classe générale*/
+html {
+  height: 100%;
+}
+
+main {
+  text-align: center;
+  padding-bottom: 3.5rem;
+}
+
+body {
+  position: relative;
+  text-align: center;
+  padding: 3px;
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  margin: 0px;
+}
+
+header {
+  margin: 0.5em;
+  padding: 0.5rem;
+}
+
+/*I.1.1 Page menu*/
+p {
+  font-size: 15px;
+  line-height: 50%;
+}
+
+.logo {
+  max-width: 70%;
+}
+
+.btnback {
+  position: absolute;
+  z-index: 0;
+  left: 10px;
+  align-items: center;
+  top: 10px;
+  left: 5px;
+}
+
+.logoback {
+  max-width: 70%;
+}
+
+.menu {
+  display: flex;
+  background-color: #eff4f4;
+  border-radius: 50px 50px 0px 0px;
+  padding: 10px;
+  gap: 10px;
+}
+
+.menu__titre {
+  display: flex;
+  justify-content: start;
+  font-size: 12px;
+  width: 265px;
+}
+
+/* I.2 Applications du loading spinner*/
+.loading {
+  border-radius: 50%;
+  border-top: 16px solid lightgrey;
+  border-right: 16px solid #99e2d0;
+  border-bottom: 16px solid #9356dc;
+  border-left: 16px solid #ff79da;
+  width: 150px;
+  height: 150px;
+  animation: spin 2s linear;
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;
+  content: "";
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate 0deg;
+    opacity: 1;
+  }
+  100% {
+    transform: rotate 360deg;
+    opacity: 0;
+    display: none;
+  }
+}
+/* I.3 Localisation */
+.localisation {
+  display: flex;
+  gap: 8%;
+  background-color: #eaeaea;
+  box-shadow: 0px 1px #d4d4d4;
+}
+
+.carte {
+  min-width: 280px;
+  display: flex;
+  align-items: center;
+  height: 45px;
+  gap: 8%;
+  justify-content: center;
+}
+
+/* I.4 Bloc Haut*/
+.haut {
+  background-color: #eff4f4;
+  padding: 5px;
+}
+
+img {
+  border-radius: 10px 10px 0px 0px;
+  max-width: 100%;
+}
+
+button {
+  font-size: 10PX;
+  border-radius: 22px;
+  color: white;
+  margin: 10px;
+  min-width: 200px;
+  max-width: 80%;
+  height: 45PX;
+}
+
+.btn1 {
+  background: linear-gradient(170deg, #ff7ad9, #9356dc);
+  opacity: 1;
+}
+.btn1:hover {
+  background-color: #9356dc;
+  opacity: 0.7;
+  box-shadow: 2px 2px black;
+}
+
+/* I.5 Bloc navigation*/
+ol {
+  list-style: none;
+  counter-reset: bullets;
+  max-width: 100%;
+  padding-left: 0;
+  margin-left: 1.1rem;
+  margin-right: 1rem;
+}
+
+li {
+  font-weight: 700;
+  font-family: Roboto;
+  counter-increment: bullets;
+  align-items: center;
+  max-width: 100%;
+  display: flex;
+  font-size: 11PX;
+  margin: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  height: 40PX;
+  background-color: #f6f6f6;
+  gap: 8%;
+  border-radius: 22px 22px 22px 22px;
+  box-shadow: 0 0 1px 1px silver;
+}
+li::before {
+  content: counter(bullets);
+  color: white;
+  background: #9356dc;
+  padding: 0.2rem 0.5rem;
+  border-radius: 50%;
+  margin-left: -0.8rem;
+}
+li:hover {
+  background: #eff4f4;
+  box-shadow: 0 0 1px 1px #d3d4d4;
+}
+
+.clr {
+  background: #f5edff;
+}
+.clr:hover {
+  background: #f2e6f7;
+  box-shadow: 0 0 1px 1px #d3d4d4;
+  color: #9356dc;
+}
+.clr h4:hover {
+  color: black;
+}
+
+/* I.6 Bloc Restaurants*/
+.restaurants {
+  background-color: #f6f6f6;
+  padding: 5px;
+}
+
+h3 {
+  font-size: 15px;
+  line-height: 40%;
+}
+
+.blocimagetexte {
+  position: relative;
+  display: flex;
+  margin: 15px;
+  border-radius: 10px 10px 0 0;
+  border: 1px solid #e7e7e7;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  min-width: 240px;
+  max-width: 100%;
+}
+
+.new {
+  position: absolute;
+  background-color: #71d7be;
+  color: #278870;
+  height: 25px;
+  width: 80px;
+  border-radius: 3px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  margin: 5%;
+  align-items: center;
+  font-weight: 900;
+  font: size 0.8em;
+  TOP: 5PX;
+  right: 5px;
+}
+
+.texterestaurants {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  height: 60px;
+  min-width: 250px;
+  max-width: 100%;
+  padding-left: 5px;
+}
+
+.blocbasdepage {
+  display: flex;
+  flex-direction: row;
+}
+
+.like {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.coeurvide {
+  position: absolute;
+}
+
+.coeurplein {
+  position: absolute;
+  opacity: 0;
+}
+.coeurplein:hover {
+  opacity: 0.8;
+}
+
+/* I.7 Bloc footer*/
+footer {
+  background-color: black;
+  padding: 18px;
+}
+
+.entete {
+  max-width: 35%;
+  max-height: 55%;
+  margin: 5px;
+}
+
+.proposition, .partenaire, .mention, .contact {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: center;
+  gap: 3%;
+  line-height: 0.2;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* II Mediaqueries pour tablettes*/
+@media only screen and (min-width: 600px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+  }
+
+  .carte {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+  }
+
+  ol {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  li {
+    width: 150px;
+    font-size: 9px;
+  }
+
+  .blocimagetexte {
+    width: 500px;
+  }
+
+  .texterestaurants {
+    width: 500px;
+  }
+}
+/*III Mediaqueries pour ordinateur*/
+@media only screen and (min-width: 1024px) {
+  li {
+    width: 200px;
+    font-size: 11px;
+  }
+
+  .blocimagetexte {
+    justify-content: center;
+    margin: 20px 50px;
+  }
+
+  .texterestaurants {
+    width: 450px;
+  }
+
+  .proposition, .partenaire, .mention, .contact {
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=style.css--watch.map */
